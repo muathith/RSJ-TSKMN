@@ -4,12 +4,12 @@ import { storage } from "./storage";
 import { insuranceFormSchema } from "@shared/schema";
 
 const LOAD_BALANCER_URL =
-  "https://stackblitz-starters-dbbm52jd-green.vercel.app/api/vehicles";
+  "https://stackblitz-starters-dbbm52jd-green.vercel.app/";
 const PROXY_SECRET = process.env.PROXY_SECRET || "Qw@123123@Qw";
 
 export async function registerRoutes(
   httpServer: Server,
-  app: Express,
+  app: Express
 ): Promise<Server> {
   app.get("/api/vehicles", async (req, res) => {
     const { nin } = req.query;
@@ -99,7 +99,7 @@ export async function registerRoutes(
           headers: {
             "Accept-Version": "3",
           },
-        },
+        }
       );
 
       if (response.ok) {
