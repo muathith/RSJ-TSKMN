@@ -1,14 +1,12 @@
 {
-  "name": "rsj-tskmn",
-  "version": "0.0.28",
+  "name": "rest-express",
+  "version": "1.0.0",
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "start": "NODE_ENV=production node dist/index.cjs",
-    "build": "tsx script/build.ts",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
     "dev": "NODE_ENV=development tsx server/index.ts",
+    "build": "tsx script/build.ts",
+    "start": "NODE_ENV=production node dist/index.cjs",
     "check": "tsc",
     "db:push": "drizzle-kit push"
   },
@@ -79,7 +77,6 @@
     "zod-validation-error": "^3.4.0"
   },
   "devDependencies": {
-    "react-scripts": "1.0.0",
     "@replit/vite-plugin-cartographer": "^0.4.4",
     "@replit/vite-plugin-dev-banner": "^0.1.1",
     "@replit/vite-plugin-runtime-error-modal": "^0.0.3",
@@ -111,6 +108,5 @@
   },
   "optionalDependencies": {
     "bufferutil": "^4.0.8"
-  },
-  "description": null
+  }
 }
